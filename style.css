@@ -1,0 +1,518 @@
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  margin-right: 110px;
+}
+
+span {
+  color: rgb(5, 5, 49);
+}
+.navbar {
+  position: fixed;
+  top: 0;
+}
+
+.navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+header {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* z-index: 1000; */
+}
+
+#home::before {
+  content: "";
+  background: url("images/bg3.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.75;
+  filter: blur(1.8px);
+  z-index: -1;
+}
+#home {
+  height: 100vh;
+}
+
+.navbar-logo {
+  padding: 0px 25px;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 2.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+  color: black;
+  font-weight: 800;
+}
+
+.navbar-logo:hover {
+  font-weight: 800;
+  color: black;
+}
+
+ul {
+  margin-left: 7rem;
+}
+
+li {
+  margin: 0px 30px;
+  font-size: 1.5rem;
+  font-family: "Baloo Bhai 2", cursive;
+  font-weight: 600;
+  color: black;
+}
+
+.nav-link {
+  color: black !important;
+  font-weight: 800;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid black;
+}
+
+.nav-link:active {
+  border-bottom: 2px solid black !important;
+}
+
+.navbar-toggler-icon {
+  color: black !important;
+}
+
+.home-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  height: 100vh;
+  justify-content: center;
+  padding: 0 80px;
+  /* top: 17rem; */
+  /* left: 22rem; */
+  color: black;
+  line-height: 1rem;
+}
+
+.home-header {
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.home-elements p {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#btn2 {
+  margin: 18px 8px;
+  width: 8rem;
+  height: 3.5rem;
+  background-color: transparent;
+  border-radius: 10px;
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: 2px solid black;
+  color: black;
+  transition: all 1s;
+}
+
+#btn1 {
+  margin: 18px 8px;
+  width: 8rem;
+  height: 3.5rem;
+  background-color: transparent;
+  border-radius: 10px;
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 1.3rem;
+  color: white;
+  border: 2px solid white;
+  font-weight: 800;
+  transition: all 1s;
+}
+
+#btn1:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+#btn2:hover {
+  background-color: white;
+  border: 2px solid black;
+}
+
+.toggle_menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mbtn {
+  height: 3rem;
+  width: 7rem;
+  border-radius: 8px;
+  margin: 5px 0px;
+  font-family: "Baloo Bhai 2", cursive;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: goldenrod;
+  /* border: 2px solid black; */
+}
+
+#menu {
+  margin-top: 20px;
+}
+
+#indianmenu {
+  /* display: none; */
+  height: 100%;
+}
+
+#mexicanmenu {
+  display: none;
+  height: 100%;
+}
+
+#chinesemenu {
+  display: none;
+  height: 100%;
+}
+
+#italianmenu {
+  display: none;
+  height: 100%;
+}
+
+#thaimenu {
+  display: none;
+  height: 100%;
+}
+
+#about {
+  margin-top: 60px;
+}
+
+.abthead {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.chef {
+  display: flex;
+  margin: 90px 120px;
+  margin-top: 50px;
+  height: 450px;
+  justify-content: space-evenly;
+}
+
+.chef img {
+  border-radius: 15px;
+}
+
+.abtchef {
+  text-align: justify;
+  margin: 0px 100px;
+  margin-top: 100px;
+}
+
+.abtchef h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.chefimg img {
+  display: inline;
+  text-align: center;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.abtchef p {
+  margin: 0px 20px;
+}
+
+.container {
+  text-align: center;
+  margin: 35px 50px;
+  width: 200px;
+  /* height: 300px; */
+}
+
+.vision {
+  display: flex;
+  /* flex-direction: column; */
+  margin: 80px 100px;
+  align-items: center;
+}
+
+.vision p {
+  text-align: justify;
+  margin: 30px 100px;
+}
+
+.vision img {
+  width: 40%;
+  border-radius: 15px;
+}
+.abtvision h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#contact {
+  position: relative;
+}
+
+
+#contact-box::before {
+  content: "";
+  background: url("images/contactbackground.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 85%;
+  width: 100%;
+  opacity: 0.8;
+
+  z-index: -1;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+#contact-box form {
+  width: 40%;
+}
+
+#contact-box label {
+  width: 40%;
+  font-size: 1.3rem;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+#formbutton {
+  border-radius: 10px;
+  font-weight: 600;
+  color: black;
+  font-size: 1.2rem;
+  border: 3px solid black;
+  background-color: white;
+  height: 3rem;
+  width: 7rem;
+  transition: all 1s;
+}
+
+#formbutton:hover {
+  background-color: black;
+  color: white;
+  border: 3px solid white;
+}
+label {
+  font-weight: 600;
+}
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+
+.affix + .container-fluid {
+  padding-top: 70px;
+}
+
+* {
+  color: black;
+}
+
+.c_head {
+  font-weight: 600;
+  margin: 40px 0px;
+  text-align: center;
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 3.5rem;
+}
+
+.menucard {
+  margin-top: 15px;
+  text-align: center;
+  width: 100%;
+  height: 600px;
+}
+
+.underline {
+  color: rgb(78, 78, 78);
+  border-bottom: 2px solid rgb(78, 78, 78);
+}
+footer {
+  margin-top: -19px;
+  text-align: center;
+  height: 320px;
+  width: 100%;
+  background-color: rgb(5, 5, 49);
+}
+.fcontainer {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.fcontainer img {
+  margin-top: 20px;
+  width: 130%;
+}
+.social h3 {
+  font-family: "Baloo Bhai 2", cursive;
+  text-align: center;
+  color: white;
+}
+#linkhead {
+  color: darkgoldenrod;
+}
+
+#ad {
+  visibility: hidden;
+}
+.address {
+  padding-left: 3rem;
+}
+.address p {
+  font-family: "Baloo Bhai 2", cursive;
+  margin-top: 20px;
+  color: white;
+  text-align: justify;
+}
+
+.address h3 {
+  font-family: "Baloo Bhai 2", cursive;
+  color: goldenrod;
+}
+
+.subscribe h3 {
+  font-family: "Baloo Bhai 2", cursive;
+  color: white;
+}
+
+.subscribe input {
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+}
+
+#subbtn {
+  margin-top: 10px;
+  background-color: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+#copyright {
+  margin-top: 20px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1098px) {
+  .chef {
+    display: flex;
+    margin: 90px 80px;
+    margin-top: 50px;
+    height: 450px;
+    justify-content: space-evenly;
+  }
+  .abtchef {
+    text-align: justify;
+    margin: 0px 60px;
+    margin-top: 100px;
+  }
+  .vision img {
+    width: 45%;
+    border-radius: 15px;
+  }
+
+  .vision {
+    display: flex;
+    /* flex-direction: column; */
+    margin: 80px 60px;
+    align-items: center;
+  }
+
+  .vision p {
+    text-align: justify;
+    margin: 30px 0px;
+  }
+
+  .vision h3 {
+    margin-top: 50px;
+  }
+
+  .abtvision {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .chef {
+    display: flex;
+    margin: 90px 80px;
+    margin-top: 50px;
+    height: 450px;
+    justify-content: space-evenly;
+  }
+
+  .chef img {
+    border-radius: 15px;
+  }
+
+  .abtchef {
+    text-align: justify;
+    margin: 0px 40px;
+    margin-top: 100px;
+  }
+
+  .abtchef h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .abtchef p {
+    margin: 0px 0px;
+  }
+
+  .container {
+    text-align: center;
+    margin: 35px 50px;
+    width: 200px;
+    /* height: 300px; */
+  }
+}

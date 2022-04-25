@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" media="screen and (max-width:989px) " href="responsive.css">
+  <title>Restaurant</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top" data-spy="affix" data-offset-top="197">
+      <div class="container-fluid">
+        <a class="navbar-logo" href="#home">Restaurant</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="home-elements">
+      <h1 class="home-header">Welcome to <span>Restaurant</span> </h1>
+      <p>Delicious Dine For<span> You</span></p>
+      <div id="hbtn">
+        <button id="btn1">Book Table</button>
+        <button id="btn2">Menu</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h1 class="c_head">Our<span id="linkhead"> Menu</span></h1>
+    <div class="toggle_menu">
+      <button class="mbtn" id="btnin" onclick="toggleIndian()">Indian</button>
+      <button class="mbtn" id="btnme" onclick="toggleMexican()">Mexican</button>
+      <button class="mbtn" id="btnch" onclick="toggleChinese()">Chinese</button>
+      <button class="mbtn" id="btnit" onclick="toggleItalian()">Italian</button>
+      <button class="mbtn" id="btnth" onclick="toggleThai()">Thai</button>
+    </div>
+    <div class="menucard">
+      <img id="indianmenu" src="menucard/indian.jpg" alt="">
+      <img id="mexicanmenu" src="menucard/mexican.jpg" alt="">
+      <img id="chinesemenu" src="menucard/chinese.jpg" alt="">
+      <img id="italianmenu" src="menucard/italian (2).jpg" alt="">
+      <img id="thaimenu" src="menucard/thai.jpg" alt="">
+    </div>
+  </section>
+  <section id="about">
+    <h1 class="c_head"><span id="linkhead">About</span> Us</h1>
+    <h2 class="abthead"><span class="underline">Our Chef</span></h2>
+    <div class="chef" data-aos="fade-down">
+      <div class="chefimg">
+        <img src="images/chef.jpg" alt="">
+      </div>
+      <div class="abtchef">
+        <h3>Mr. Charlie</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa animi vel ex illo ipsam sint debitis ratione
+          in? Porro velit laborum, voluptas reiciendis quasi aspernatur ipsum illum, doloremque deserunt, atque
+          molestiae iure eius enim odio nisi. Delectus animi dolorem natus sit ratione quisquam reprehenderit nam culpa,
+          facere magnam, voluptate quam?
+        </p>
+      </div>
+    </div>
+    <h2 class="abthead"><span class="underline">Our Top Dishes</span></h2>
+    <div class="container">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://source.unsplash.com/1400x600/?pizza,fastfood" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/1400x600/?nachos,restaurantfood" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/1400x600/?burger,deliciousfood" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <h2 class="abthead"><span class="underline">Our Vision</span></h2>
+    <div class="vision" data-aos="fade-down">
+      <img src="images/vision.jpg" alt="">
+      <div class="abtvision">
+        <h3>Keeping Customers Happy</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus est veniam obcaecati magnam mollitia,
+          quidem nisi vel sit facere dignissimos, distinctio cupiditate alias, corporis error minima tempore inventore
+          nostrum harum aspernatur. Dolorum possimus libero nam! Omnis eaque in ducimus excepturi. Nesciunt at
+
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h1 class="c_head">Contact <span id="linkhead"> Us</span></h1>
+    <div id="contact-box">
+      <form action="">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="email">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="phone" name="phone" id="phone" placeholder="Enter your phone">
+        </div>
+        <div class="form-group">
+          <label for="name">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <button id="formbutton" type="submit" onclick="confirmForm()">Submit</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <div class="fcontainer">
+      <div class="social">
+        <h3>Links</h3>
+        <img src="images/icon.png" alt="">
+      </div>
+      <div class="address">
+        <h3>Address</h3>
+        <p>Location: Shop No 8/9 Ayesha Tower, <br><span id="ad">Location: </span>Jogeshwari West,<br><span
+            id="ad">Location: </span>Sv Road, Near Mtnl
+        </p>
+        <p>Email: resturant@gmail.com</p>
+        <p>Phone: +91-98989898989</p>
+      </div>
+      <div class="subscribe">
+        <h3>Newsletter</h3>
+        <input type="text" placeholder="Enter your email"> <br>
+        <button id="subbtn" type="submit">Subscribe</button>
+      </div>
+    </div>
+    <p id="copyright">&copy; Copyright @ 2021 By Restaurant.com</p>
+  </footer>
+  <script>
+    let indianmenu = document.getElementById('indianmenu');
+    let mexicanmenu = document.getElementById('mexicanmenu');
+    let chinesemenu = document.getElementById('chinesemenu');
+    let italian = document.getElementById('italian');
+    let thaimenu = document.getElementById('thaimenu');
+    function toggleIndian() {
+      if (indianmenu.style.display != 'inline-block') {
+        indianmenu.style.display = 'inline-block';
+        mexicanmenu.style.display = 'none';
+        chinesemenu.style.display = 'none';
+        italianmenu.style.display = 'none';
+        thaimenu.style.display = 'none';
+      }
+    }
+    function toggleChinese() {
+      if (chinesemenu.style.display != 'inline-block') {
+        chinesemenu.style.display = 'inline-block';
+        indianmenu.style.display = 'none';
+        mexicanmenu.style.display = 'none';
+        italianmenu.style.display = 'none';
+        thaimenu.style.display = 'none';
+      }
+    }
+    function toggleMexican() {
+      if (mexicanmenu.style.display != 'inline-block') {
+        mexicanmenu.style.display = 'inline-block';
+        indianmenu.style.display = 'none';
+        chinesemenu.style.display = 'none';
+        italianmenu.style.display = 'none';
+        thaimenu.style.display = 'none';
+      }
+    }
+    function toggleItalian() {
+      if (italianmenu.style.display != 'inline-block') {
+        italianmenu.style.display = 'inline-block';
+        indianmenu.style.display = 'none';
+        mexicanmenu.style.display = 'none';
+        chinesemenu.style.display = 'none';
+        thaimenu.style.display = 'none';
+      }
+    }
+    function toggleThai() {
+      if (thaimenu.style.display != 'inline-block') {
+        thaimenu.style.display = 'inline-block';
+        indianmenu.style.display = 'none';
+        mexicanmenu.style.display = 'none';
+        chinesemenu.style.display = 'none';
+        italianmenu.style.display = 'none';
+      }
+    }
+    function confirmForm() {
+      confirm("You have submited the form");
+    }
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 250,
+      duration: 1400,
+    });
+  </script>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
